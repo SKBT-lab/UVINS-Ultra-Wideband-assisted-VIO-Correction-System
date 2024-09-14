@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20231225-0747-Experimental"
+	Name="skbt-BIT"
+	Generator="ctest-3.16.3"
+	CompilerName="/usr/bin/g++"
+	CompilerVersion="9.4.0"
+	OSName="Linux"
+	Hostname="skbt-BIT"
+	OSRelease="5.15.0-91-generic"
+	OSVersion="#101~20.04.1-Ubuntu SMP Thu Nov 16 14:22:28 UTC 2023"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="140"
+	ProcessorCacheSize="12288"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="15719"
+	TotalPhysicalMemory="15648"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2800"
+	>
+	<Testing>
+		<StartDateTime>Dec 25 16:24 CST</StartDateTime>
+		<StartTestTime>1703492655</StartTestTime>
+		<TestList/>
+		<EndDateTime>Dec 25 16:24 CST</EndDateTime>
+		<EndTestTime>1703492655</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

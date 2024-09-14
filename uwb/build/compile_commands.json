@@ -1,0 +1,57 @@
+[
+{
+  "directory": "/home/skbt/BIT-Drone-360/src/uwb/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"uwb\\\" -I/home/skbt/BIT-Drone-360/src/uwb/build/devel/include -I/usr/include/eigen3 -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/Mini5.dir/src/UWB_Mini5.cpp.o -c /home/skbt/BIT-Drone-360/src/uwb/src/UWB_Mini5.cpp",
+  "file": "/home/skbt/BIT-Drone-360/src/uwb/src/UWB_Mini5.cpp"
+},
+{
+  "directory": "/home/skbt/BIT-Drone-360/src/uwb/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"uwb\\\" -I/home/skbt/BIT-Drone-360/src/uwb/build/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/eigen3  -g   -o CMakeFiles/Optimization.dir/src/Opt_wholev0.5_p-q.cpp.o -c /home/skbt/BIT-Drone-360/src/uwb/src/Opt_wholev0.5_p-q.cpp",
+  "file": "/home/skbt/BIT-Drone-360/src/uwb/src/Opt_wholev0.5_p-q.cpp"
+},
+{
+  "directory": "/home/skbt/BIT-Drone-360/src/uwb/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"uwb\\\" -I/home/skbt/BIT-Drone-360/src/uwb/build/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/eigen3  -g   -o CMakeFiles/UWB.dir/src/UWB.cpp.o -c /home/skbt/BIT-Drone-360/src/uwb/src/UWB.cpp",
+  "file": "/home/skbt/BIT-Drone-360/src/uwb/src/UWB.cpp"
+},
+{
+  "directory": "/home/skbt/BIT-Drone-360/src/uwb/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"uwb\\\" -I/home/skbt/BIT-Drone-360/src/uwb/build/devel/include -I/usr/include/eigen3 -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/visualization.dir/src/visualization.cpp.o -c /home/skbt/BIT-Drone-360/src/uwb/src/visualization.cpp",
+  "file": "/home/skbt/BIT-Drone-360/src/uwb/src/visualization.cpp"
+},
+{
+  "directory": "/home/skbt/BIT-Drone-360/src/uwb/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"uwb\\\" -I/home/skbt/BIT-Drone-360/src/uwb/build/devel/include -I/usr/include/eigen3 -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/Write.dir/src/write_to_txt.cpp.o -c /home/skbt/BIT-Drone-360/src/uwb/src/write_to_txt.cpp",
+  "file": "/home/skbt/BIT-Drone-360/src/uwb/src/write_to_txt.cpp"
+},
+{
+  "directory": "/home/skbt/BIT-Drone-360/src/uwb/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"uwb\\\" -I/home/skbt/BIT-Drone-360/src/uwb/build/devel/include -I/usr/include/eigen3 -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/EKF.dir/src/EKF_ROSnode.cpp.o -c /home/skbt/BIT-Drone-360/src/uwb/src/EKF_ROSnode.cpp",
+  "file": "/home/skbt/BIT-Drone-360/src/uwb/src/EKF_ROSnode.cpp"
+},
+{
+  "directory": "/home/skbt/BIT-Drone-360/src/uwb/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"uwb\\\" -I/home/skbt/BIT-Drone-360/src/uwb/build/devel/include -I/usr/include/eigen3 -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/EKF.dir/src/EKF.cpp.o -c /home/skbt/BIT-Drone-360/src/uwb/src/EKF.cpp",
+  "file": "/home/skbt/BIT-Drone-360/src/uwb/src/EKF.cpp"
+},
+{
+  "directory": "/home/skbt/BIT-Drone-360/src/uwb/build/gtest/googlemock",
+  "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/include/eigen3 -isystem /usr/src/googletest/googlemock/include -isystem /usr/src/googletest/googlemock -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/googletest/googlemock/src/gmock_main.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/skbt/BIT-Drone-360/src/uwb/build/gtest/googlemock",
+  "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/include/eigen3 -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/skbt/BIT-Drone-360/src/uwb/build/gtest/googletest",
+  "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -I/usr/include/eigen3 -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/googletest/googletest/src/gtest_main.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/skbt/BIT-Drone-360/src/uwb/build/gtest/googletest",
+  "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/include/eigen3 -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+}
+]

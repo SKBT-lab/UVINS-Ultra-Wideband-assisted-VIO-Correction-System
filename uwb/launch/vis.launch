@@ -1,0 +1,9 @@
+<launch>
+  <!-- <node pkg="tf" type="static_transform_publisher" name="world_to_map" args="0 0 0 0 0 0 /map /world 100" /> -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find uwb)/launch/VIU_vis.rviz" required="true" />
+  <node pkg="uwb" type="visualization" name="visualization" output="screen" required = "true">
+
+  </node>
+
+
+</launch>
