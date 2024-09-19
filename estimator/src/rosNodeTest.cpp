@@ -231,7 +231,7 @@ void cam_switch_callback(const std_msgs::BoolConstPtr &switch_msg)
 void UWB_callback(const uwb::UWB_msg& dis){
     // double t1;
     // TicToc run_time;
-   if(dis.D0 > 0.2 && dis.D1 > 0.2 && dis.D2 > 0.2){
+    if(dis.D0 > 0.2 && dis.D1 > 0.2 && dis.D2 > 0.2){
         Vector3d dis_(dis.D0, dis.D1, dis.D2);
         Vector3d Dis = elimanator.Mean_filter(dis_);
         //Vector3d Dis = elimanator.Kalman_filter(dis_);
@@ -245,16 +245,16 @@ void UWB_callback(const uwb::UWB_msg& dis){
         elimanator.Update_state();
         
         //cout << "Init: " << Init_time.toc() << std::endl;
-   }
-     if(estimator.correctDetection() && !elimanator.Us[Opt_window_size - 1].isZero()){
+    }
+    if(estimator.correctDetection() && !elimanator.Us[Opt_window_size - 1].isZero()){
             elimanator.Optimization();
             estimator.dP = elimanator.correction;
             // estimator.dP = elimanator.Init_correction;
             estimator.correct_Flag = true;
-        }
+    }
     
    else{
-        cout<<'2'<<std::endl;
+        cout <<"waiting for keyframe switching" << std::endl;
    }
     // t1 = run_time.toc();
     // outfile << std::fixed << std::setprecision(6)
@@ -284,6 +284,7 @@ int main(int argc, char **argv)
 
     readParameters(config_file);
     estimator.setParameter();
+    elimanator.setParameter(config_file);
 
 #ifdef EIGEN_DONT_PARALLELIZE
     ROS_DEBUG("EIGEN_DONT_PARALLELIZE");
@@ -308,7 +309,7 @@ int main(int argc, char **argv)
     ros::Subscriber sub_restart = n.subscribe("/vins_restart", 100, restart_callback);
     ros::Subscriber sub_imu_switch = n.subscribe("/vins_imu_switch", 100, imu_switch_callback);
     ros::Subscriber sub_cam_switch = n.subscribe("/vins_cam_switch", 100, cam_switch_callback);
-    ros::Subscriber sub_uwb = n.subscribe("/UWB_module/distance", 1, UWB_callback);
+    ros::Subscriber sub_uwb = n.subscribe(UWB_TOPIC, 1, UWB_callback);
 
     std::thread sync_thread{sync_process};
     ros::spin();

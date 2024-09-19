@@ -426,7 +426,34 @@ Vector3d E_K_FILTER::Get_dP(){
         }
     }
         return dP_sum;
-    
-    
+}
+
+void E_K_FILTER::setParameter(std::string path){
+    size_t pos = path.find_last_of('/');
+    std::string config_path = path.substr(0, pos + 1);
+    YAML::Node config = YAML::LoadFile(path);
+    std::string uwb_path = config["uwb_calib"].as<std::string>();
+    std::string uwbconfig_path = config_path + '/' + uwb_path;
+    YAML::Node uwb_config = YAML::LoadFile(uwbconfig_path);
+    A0.x() = uwb_config["Anchor0"]["x"].as<double>();
+    A0.y() = uwb_config["Anchor0"]["y"].as<double>();
+    A0.z() = uwb_config["Anchor0"]["z"].as<double>();
+
+    A1.x() = uwb_config["Anchor1"]["x"].as<double>();
+    A1.y() = uwb_config["Anchor1"]["y"].as<double>();
+    A1.z() = uwb_config["Anchor1"]["z"].as<double>();
+
+    A2.x() = uwb_config["Anchor2"]["x"].as<double>();
+    A2.y() = uwb_config["Anchor2"]["y"].as<double>();
+    A2.z() = uwb_config["Anchor2"]["z"].as<double>();
+
+    UWB_IMU.x() = uwb_config["P_UWB_IMU"]["x"].as<double>();
+    UWB_IMU.y() = uwb_config["P_UWB_IMU"]["y"].as<double>();
+    UWB_IMU.z() = uwb_config["P_UWB_IMU"]["z"].as<double>();
+
+    Anchor.push_back(A0);
+    Anchor.push_back(A1);
+    Anchor.push_back(A2);
+
 
 }

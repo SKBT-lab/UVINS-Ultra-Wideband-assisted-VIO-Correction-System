@@ -1,0 +1,6 @@
+<launch>
+	<node name="uvins" pkg="uvins"  type="uvins_node" output="screen" args="$(find uvins)/../config/SKBT_280.yaml"/> 
+	<!-- <node name="loop_fusion" pkg="loop_fusion"  type="loop_fusion_node" args="$(find uvins)/../config/SKBT_280.yaml" output="screen"/> -->
+	
+
+</launch> 

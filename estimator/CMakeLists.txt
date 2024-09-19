@@ -62,8 +62,7 @@ add_library(uvins_lib
     src/initial/initial_sfm.cpp
     src/initial/initial_ex_rotation.cpp
     src/featureTracker/feature_tracker.cpp)
-target_link_libraries(uvins_lib ${catkin_LIBRARIES} ${OpenCV_LIBS} ${CERES_LIBRARIES})
-
+target_link_libraries(uvins_lib ${catkin_LIBRARIES} ${OpenCV_LIBS} ${CERES_LIBRARIES} yaml-cpp)
 
 add_executable(uvins_node src/rosNodeTest.cpp)
 target_link_libraries(uvins_node uvins_lib) 

@@ -12,6 +12,7 @@
 #include "../estimator/parameters.h"
 #include <fstream>
 #include "../utility/tic_toc.h"
+#include <yaml-cpp/yaml.h>
 
 using namespace Eigen;
 
@@ -99,7 +100,7 @@ public:
     void Update_state();
     Vector3d fitParabola(const Vector2d& p1, const Vector2d& p2, const Vector2d& p3);
     double interpolate(const std::vector<Vector2d>& D, double t);
-    
+    void setParameter(std::string config_file);
     
     E_K_FILTER(){
         outfile.open("/home/skbt/VIU_ROSBAG/txt_Data/T_A.txt", std::ios::out);
@@ -109,12 +110,6 @@ public:
         // AlignInit_Flag = true;
         Mean_window_size = 4;
         Window_sum << 0.0, 0.0, 0.0;
-        A0 << -3.507, 1.671, 1.847 - 0.193;//0.193
-        A1 << 2.011, -1.948, 1.865 - 0.193;
-        A2 << 2.228, 1.485, 1.503 - 0.193;
-        Anchor.push_back(A0);
-        Anchor.push_back(A1);
-        Anchor.push_back(A2);
         x_p << 0.0, 0.0, 0.0;
         x_p_pre << 0.0, 0.0, 0.0;
         x_pv << 0.0, 0.0, 0.0;
@@ -128,7 +123,6 @@ public:
         h.setZero();
         Q = 0.2 * A;
         R = 0.4 * A;
-        UWB_IMU << 0.0, -0.06, 0.1; 
 
         state_.setZero();  
         state_covariance_.setIdentity();  
