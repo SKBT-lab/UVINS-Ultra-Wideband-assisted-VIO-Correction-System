@@ -168,35 +168,16 @@ include_directories(
 #   ${catkin_LIBRARIES}
 # )
 
-#add_executable(UWB_module src/UWB_module.cpp)
-add_executable(Mini5 src/UWB_Mini5.cpp)
-#add_executable(Mini5_SW src/slide_window.cpp)
-#add_executable(Mini5_KM src/slide_window2.cpp)
-#add_executable(Mini5_DT src/DT.cpp)
-#add_executable(UWB_by_Kalman src/UWB_by_kalman.cpp)
-#add_library(Serial SHARED include/uwb/Serial.cpp)
-add_executable(Optimization src/Opt_wholev0.5_p-q.cpp)
-add_executable(UWB src/UWB.cpp)
+
 add_executable(visualization src/visualization.cpp)
 add_executable(Write src/write_to_txt.cpp)
-add_executable(EKF src/EKF_ROSnode.cpp src/EKF.cpp)
 
 
-target_link_libraries(Optimization ${CERES_LIBRARIES})
-target_link_libraries(Optimization ${catkin_LIBRARIES})
-target_link_libraries(UWB ${CERES_LIBRARIES})
-target_link_libraries(UWB ${catkin_LIBRARIES})
+
+
 target_link_libraries(visualization ${catkin_LIBRARIES})
-#target_link_libraries(UWB_module Serial)
-#target_link_libraries(UWB_module ${catkin_LIBRARIES})
-#target_link_libraries(UWB_by_Kalman ${catkin_LIBRARIES})
-#target_link_libraries(UWB_by_Kalman Serial)
-target_link_libraries(Mini5 ${catkin_LIBRARIES})
-#target_link_libraries(Mini5_SW ${catkin_LIBRARIES})
-#target_link_libraries(Mini5_KM ${catkin_LIBRARIES})
-#target_link_libraries(Mini5_DT ${catkin_LIBRARIES})
 target_link_libraries(Write ${catkin_LIBRARIES})
-target_link_libraries(EKF ${catkin_LIBRARIES})
+
 
 
 #############
