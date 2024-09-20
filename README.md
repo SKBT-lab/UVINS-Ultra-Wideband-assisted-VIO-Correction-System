@@ -15,9 +15,9 @@ This project achieves the fusion of UWB and VIO, with VIO based on VINS_Fusion. 
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Dataset](#dataset)
+- [Paper](#paper)
+- [Vedio](#vedio)
 
 ## Installation
 This project is built and run based on the ROS system.
@@ -29,7 +29,6 @@ catkin_init_workspace
 cd ~/catkin_ws/
 catkin_make
 ```
-
 ```bash
 # Clone the repository
 cd ~/catkin_ws/src
@@ -63,8 +62,16 @@ roslaunch uwb vis.launch
 ```
 
 ## Dataset
-http://......
-
+### Download 
+https://drive.google.com/file/d/1A3Si-ZHJsaXVGTm390E3QfihV35OyjK_/view?usp=drive_link
+### rostopic list:
+- `Ground Truth: /vrpn_client_node/XY_Bigbaby/pose          ➤ Captured by NOKOV motion capture system`
+- `UWB: /UWB_module/distance                                ➤ Captured by DWM1000 modules from YCHIOT`
+- `Left Camera：/camera/infra1/image_rect_raw               ➤ Captured by Intel D435i`
+- `Right Camera: /camera/infra2/image_rect_raw`               
+- `IMU: /mavros/imu/data_raw                                ➤ Captured by  PixHawk v3X flight controller`
+### Extrinsic Parameters
+The default parameters in the config folder of this project correspond to the extrinsic information of the dataset, and can be adjusted according to the actual situation.
 ## Paper
 Paper is on the way. Stay tuned!
 
