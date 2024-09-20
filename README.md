@@ -1,4 +1,4 @@
-# UVINS: An UWB-assisted VIO Correction System
+# UVINS: An Ultra-Wideband assisted VIO Correction System
 
 ![License](https://img.shields.io/github/license/SKBT-lab/UVINS-Ultra-Wideband-assisted-VIO-Correction-System) 
 
