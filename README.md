@@ -77,3 +77,6 @@ Paper is on the way. Stay tuned!
 
 ## Vedio
 Stay tuned
+
+## Acknowledgments
+We appreciate the original authors and contributors of [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion.git) for their invaluable work and open-source contribution, which provided the foundation for this project.
